@@ -6,18 +6,22 @@
 
 - First I opened the raw email file with notepad ++ and quickly identified the spoofed sender information and the other suspicious content.
 
-**Received: from localhost (emkei.cz. [93.99.104.210])**
+**1. Received: from localhost (emkei.cz. [93.99.104.210])**
 
 - I found out that localhost means this is not a real, legitimate email server; attackers often use localhost when sending fake emails.
 - And attacker used emkei.cz. fake email generator to generate the email.
 
- **spf=fail** 
+ **2. spf=fail** 
 
  - This means sending server not authorized to send emails for the domain it claimed by using, so the sender identity is fake.
 
-**Content-Transfer-Encoding: base64**
+**3. Content-Transfer-Encoding: base64**
 
 - Another sighn of suspicious behaviour is the presense of base64 encoded content.
+
+**4. PDF-KOPIE_00900122211031.pdf**
+
+- This email contained PDF file with random, unsual name. Random filename commonly used Phishing, scam and malware distribution.
   
 
 
