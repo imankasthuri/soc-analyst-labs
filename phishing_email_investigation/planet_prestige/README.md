@@ -22,22 +22,38 @@
 - Emkei.cz is a famous email spoofing website, used by scammers to send fake emails.
 4. Reply-To: negeja3921@pashter.com
 - This reply is going to a different email which means attackers real address, instead of "billjobs@microapple.com". This is suspicious.
-
+  
+ <img src="https://github.com/ImanKasthuri/soc_analyst_labs/blob/main/phishing_email_investigation/planet_prestige/screenshots/Screenshot%201.png?raw=true">
+ 
 ## CyberShef/File Signature
 
 - I used CyberShef to decode the encoded text in the email to know the hidden information.
 - Used operation Hex to decode the first 4 bytes magic numbers and to see which file extension by using File Signature.
 - Found that the second base64 text is a zip file using File Signature, which can be extracted on a computer.
 
+<img src="https://github.com/ImanKasthuri/soc_analyst_labs/blob/main/phishing_email_investigation/planet_prestige/screenshots/Screenshot%202.png?raw=true">
+
+<img src="https://github.com/ImanKasthuri/soc_analyst_labs/blob/main/phishing_email_investigation/planet_prestige/screenshots/Screenshot%203.png?raw=true">
+
+<img src="https://github.com/ImanKasthuri/soc_analyst_labs/blob/main/phishing_email_investigation/planet_prestige/screenshots/Screenshot%205.png?raw=true">
+
+
 ## Analysing The Files
 
 - I used the HXD Tool to analyse the files. Attackers often send files without an extension to confuse the victim.
 - Opened the Excel file using the Microsoft Excel website and noticed that some suspicious text in the Excel. I cleared the format and found that base64 text is there.
 
+<img src="https://github.com/ImanKasthuri/soc_analyst_labs/blob/main/phishing_email_investigation/planet_prestige/screenshots/Screenshot%204.png?raw=true">
+
+<img src="https://github.com/ImanKasthuri/soc_analyst_labs/blob/main/phishing_email_investigation/planet_prestige/screenshots/Screenshot%206.png?raw=true">
+
+
 ## Viewing the Metadata of PDF a File
 
 - I used the Exftool tool to view the metadata of the GoodJobMayor.pdf file, using PowerShell.
 - The metadata revealed the details such as attacker name.
+
+<img src="https://github.com/ImanKasthuri/soc_analyst_labs/blob/main/phishing_email_investigation/planet_prestige/screenshots/Screenshot%207.png?raw=true">
 
 ## Commands Used
 
