@@ -1,12 +1,12 @@
 # BTLO Log Analysis Privilege Escalation
 
-## Overview
-
-This lab looks at the attacker's bash history to understand what happened on the server. There were no signs of anyone logging in, so the attacker didn’t gain access through SSH. Instead, they took advantage of a hidden weakness in the website. They uploaded a malicious file called x.phtml, which gave them remote access and allowed them to look for vulnerabilities on the server. Through this file, they discovered that Python had the SUID bit enabled, which they used to escalate their privileges and eventually gain root access. Afterward, the attacker deleted x.phtml to hide their tracks and make the attack harder to detect.
-
 ## Senario 
 
 <img width="1742" height="369" alt="image" src="https://github.com/user-attachments/assets/bf65d698-c8d5-4cf1-a46f-23b1c29fdaf7" />
+
+## Overview
+
+This lab looks at the attacker's bash history to understand what happened on the server. There were no signs of anyone logging in, so the attacker didn’t gain access through SSH. Instead, they took advantage of a hidden weakness in the website. They uploaded a malicious file called x.phtml, which gave them remote access and allowed them to look for vulnerabilities on the server. Through this file, they discovered that Python had the SUID bit enabled, which they used to escalate their privileges and eventually gain root access. Afterward, the attacker deleted x.phtml to hide their tracks and make the attack harder to detect.
 
 
 ## Tools Used
