@@ -52,7 +52,7 @@ Everything was included in the CSV file.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5eaf0d76-4d38-4ac4-9262-b8e1e00e70a6" />
 
 ## What country is this IP address associated with?
-I used the IP-Location.net website to check the origin country..
+I used the IP-Location.net website to check the origin country.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f393e4e0-5204-4143-8385-45533e522b4a" />
 
