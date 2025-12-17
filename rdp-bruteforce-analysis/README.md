@@ -1,4 +1,4 @@
-# RDP Bruteforce Analysis
+# 🔐 RDP Bruteforce Analysis
 > This investigation was completed as part of a hands-on lab from Blue Team Labs Online (BTLO).
 
 ## Senario
