@@ -9,14 +9,14 @@
 ## Overview
 This lab demonstrates an RDP (Remote Desktop Protocol) brute-force attack against a Windows machine. A brute-force attack occurs when an attacker attempts thousands of username and password combinations to gain access. In this analysis, I identified the number of failed login attempts, the source IP address, the country of origin, the username used, and other relevant details.
 
-## Tools Used
+## 🛠️ Tools Used
 - PowerShell
 - Windows Event Viewer
 - Notepad
 - Notepad ++
 - IP Address Lookup
 
-## How many Audit Failure events are there?
+## ❓How many Audit Failure events are there?
 I used PowerShell to gather Audit Failure events using this commands.
 
  ```$log = Import-Csv "BTLO_Bruteforce_Challenge.csv"```
@@ -83,7 +83,7 @@ $ports | Measure-Object -Minimum -Maximum
 -So if all the ports fall within a close range, like in this lab (49162–65534), it indicates that the traffic is coming from a single attacker using the same machine.
 -It also helps identify which operating system the attacker is using. In this case, the source port range 49162–65534 indicates that the attacker is coming from a Windows machine.
 
-## Conclusion
+## ✅ Conclusion
 
 Working on this lab helped me get more comfortable reading and analyzing Windows logs instead of just looking at them. Using PowerShell to filter events made it easier to spot patterns and understand what was actually happening during the attack. I also learned how small details, like changing source ports, can reveal whether an attack is automated or coming from a single system. Overall, this lab helped me think more like a SOC analyst and better understand how real-world brute-force activity is investigated.
 
