@@ -1,12 +1,12 @@
 # 🔐 RDP Bruteforce Analysis
 > This investigation was completed as part of a hands-on lab from Blue Team Labs Online (BTLO).
 
-## Senario
+##  📘 Senario
 
 <img width="1740" height="361" alt="image" src="https://github.com/user-attachments/assets/d0ecc8cb-db00-45b8-97e6-22c63dc861d6" />
 
 
-## Overview
+## 📖 Overview
 This lab demonstrates an RDP (Remote Desktop Protocol) brute-force attack against a Windows machine. A brute-force attack occurs when an attacker attempts thousands of username and password combinations to gain access. In this analysis, I identified the number of failed login attempts, the source IP address, the country of origin, the username used, and other relevant details.
 
 ## 🛠️ Tools Used
